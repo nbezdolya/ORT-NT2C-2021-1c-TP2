@@ -11,6 +11,26 @@
             }
             )
 
+            console.log("------------------")
+
+
+            function procesarArray(unArray) {
+              let arrayDeSalida = []
+              unArray.forEach((elemento) => 
+              {
+                let unObjeto = {
+                  nombre : elemento,
+                  longitud : elemento.length
+                }
+                arrayDeSalida.push(unObjeto)
+
+              })  
+              return arrayDeSalida
+            }
+            
+            const nombresProcesados = procesarArray(nombres)
+            console.log(JSON.stringify(nombresProcesados))
+
         </script>
     </body>
 </html>
